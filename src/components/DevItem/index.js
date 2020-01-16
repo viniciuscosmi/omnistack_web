@@ -2,7 +2,7 @@ import React from 'react';
 
 import './styles.css';
 
-function DevItem(dev) {
+function DevItem({ dev }) {
   return (
     <li className="dev-item">
       <header>
@@ -13,7 +13,7 @@ function DevItem(dev) {
           </div>
       </header>
       <p>{dev.bio}</p>
-      <a href={`https://github.com/${dev.github_username}`}>Acessar Perfil no github</a>
+      <a  target="_blank" href={`https://github.com/${dev.github_username}`}>Acessar Perfil no github</a>
     </li>
   )
 };
